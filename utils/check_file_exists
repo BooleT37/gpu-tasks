@@ -1,0 +1,13 @@
+if [ -z $1 ]
+then
+    echo You should specify the name of the file!
+    exit 1
+fi
+
+if [ ! -r "$1" ]
+then
+    echo File $1 doesn\'t exist or not readable
+    exit 1
+fi
+
+exit 0

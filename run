@@ -1,0 +1,3 @@
+if ! utils/check_file_exists $1; then exit 1; fi
+    
+srun --partition=debug --gres=gpu:1 $1
